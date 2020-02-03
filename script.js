@@ -41,6 +41,7 @@ if (num < 49) {
 
 (num == 50) ? console.log('right') : console.log('wrong');
 
+let num = 50;
 switch (num) {
     case num < 49:
         console.log('wrong');
@@ -48,7 +49,7 @@ switch (num) {
     case num > 100:
         console.log('many');
         break;
-    case naum > 80:
+    case num > 80:
         console.log('many too');
         break;
     case 50: /* без знака равно при switch */
@@ -57,5 +58,23 @@ switch (num) {
     default:
         console.log('что-то пошло не так');
         break;
+}
 
+// циклы
+
+let num = 50;
+// while (num < 55) {
+//     console.log(num);
+//     num++;
+// }
+
+do {
+    console.log (num);
+    num++;
+}
+while  (num < 55) 
+
+for (let i = 1; i < 8; i++ ) { /* first - начальная позиция цикла, second - условие цикла; third - наращивание переменной */
+    if (i == 6)
+    console.log(i)
 }
