@@ -20,37 +20,39 @@ let appData = {
 // appData.expenses.a1 = a2; /* Записать ответы в объект expenses в формате:expenses: { “ответ на первый вопрос” : “ответ на второй вопрос” } */
 // appData.expenses.a3 = a4;
 
-// for (let i = 0; i < 2; i++) {
-//     console.log(i);
-//     let a = prompt("Введите обязательную статью расходов в этом месяце", ''),
-//         b = prompt("Во сколько обойдется?", '');
-//         /* Оператор typeof возвращает строку, указывающую тип операнда. */
-//         if ( (typeof(a)) === 'string' &&  (typeof(a)) != null && (typeof(b)) != null 
-//             && a !='' && b !='' && a.length <50) {
-//                 console.log("done");
-//                 appData.expenses [a] = b; /* пара: ключ - значение */
-//         } else {
-//             /* возращаться к циклу обратно  -  возврат к вопросу*/
-//             i--;       
-//             console.log(i);
-//         }
-// };
-
-
-let i = 0;
-while (i < 2) {
+for (let i = 0; i < 2; i++) {
     console.log(i);
     let a = prompt("Введите обязательную статью расходов в этом месяце", ''),
-        b = prompt("Во сколько обойдется?", '');        
-    if ( (typeof(a)) === 'string' &&  (typeof(a)) != null && (typeof(b)) != null 
-    && a !='' && b !='' && a.length <50) {
-        console.log("done");
-        appData.expenses [a] = b; 
-    } else {
-        i--;
-    }
-    i++;
-}
+        b = prompt("Во сколько обойдется?", '');
+        /* Оператор typeof возвращает строку, указывающую тип операнда. */
+        if ( (typeof(a)) === 'string' &&  (typeof(a)) != null && (typeof(b)) != null 
+            && a !='' && b !='' && a.length <50) {
+                console.log("done");
+                appData.expenses [a] = b; /* пара: ключ - значение */
+        } else {
+            /* возращаться к циклу обратно  -  возврат к вопросу*/
+            console.log ("bad result");
+            i--;       
+            console.log(i);
+        }
+};
+
+
+// let i = 0;
+// while (i < 2) {
+//     console.log(i);
+//     let a = prompt("Введите обязательную статью расходов в этом месяце", ''),
+//         b = prompt("Во сколько обойдется?", '');        
+//     if ( (typeof(a)) === 'string' &&  (typeof(a)) != null && (typeof(b)) != null 
+//     && a !='' && b !='' && a.length <50) {
+//         console.log("done");
+//         appData.expenses [a] = b; 
+//     } else {
+//         console.log ("bad result");
+//         i--;
+//     }
+//     i++;
+// }
 
 
 // do {
@@ -61,8 +63,11 @@ while (i < 2) {
 //     && a !='' && b !='' && a.length <50) {
 //         console.log("done");
 //         appData.expenses [a] = b; 
-//     }
-//     i++;
+// //     } else {
+            // console.log ("bad result");
+//             i--;
+//         }
+// //     i++;
 // }
 // while  (i < 2) 
 
